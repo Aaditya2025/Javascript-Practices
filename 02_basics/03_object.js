@@ -34,3 +34,4 @@ JSuser.greetingtwo = function(){
 }
 console.log(JSuser.greeting())
 console.log(JSuser.greetingtwo())
+
