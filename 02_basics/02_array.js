@@ -26,7 +26,7 @@ const all_new_heros = [...marvel_heros, ...dc_heros];
 
 
 // console.log(Array.isArray("Aditya"));
-// console.log(Array.from("Aditya"));   //To create any value into an array.
+// console.log(Array.from("Aditya"));   //To convert value into an array.
 // console.log(Array.from({name: "Aditya"}));  //We have to tell that of which part you want to create array.
 
 
