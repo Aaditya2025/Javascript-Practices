@@ -7,10 +7,28 @@
 </head>
 <body>
     <div class="main">
-        <h1>Learning the core concept of DOM</h1>
+        <h1>Learning the core concept of DOM <span style="display: none;">To understand the innercontent</span></h1>
         <p>there are so many thing to learn in dom</p>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis velit eum consequatur fuga accusamus, mollitia, non modi, odit omnis ullam laudantium quidem.</p>
         
     </div>
 </body>
 </html>
+
+<!-- 
+DOM: Document Object Model is simply refer to the selection of html tags and attributes to change their functionality and it is based on the tree structure model. 
+    
+SELECTOR: 
+1. document.querySelector(): It is simply based on the CSS selector and it provide only one value to change their text aur style property. 
+
+2. document.querySelectorall(): It provide the nodelist of the similar type element which you select and you have to provide the index but note that this nodelist is not an array so you cann't use this as a proper array. 
+
+3. document.getElementByClassName(): It provide the HTMLCollection of all the similar type value which you select and becaue it provide all the values into the HTMLCollection so this datatype have not much prototype to use these values that's why we have to convert into nodelist or array. 
+Conversion Syntax: Array.from(variable name)
+
+
+To change the content of the html we use three thing: 
+1. innerText: It simply give the text which are shown to the website. 
+2. innerContent: It show the hidden part also which are hidden with the help of display property.
+3. innerHTML: It wil provide all the data such as attribute and style and everything which are applied on you text. 
+ -->
