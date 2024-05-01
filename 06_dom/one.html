@@ -10,9 +10,23 @@
         <h1>Learning the core concept of DOM <span style="display: none;">To understand the innercontent</span></h1>
         <p>there are so many thing to learn in dom</p>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis velit eum consequatur fuga accusamus, mollitia, non modi, odit omnis ullam laudantium quidem.</p>
-        
     </div>
 </body>
+<script>
+    function addlanguage(langName){
+        const li = document.createElement('li'); 
+        li.innerHTML = `${langName}`;
+        document.querySelector('.language').apppenchild(li)
+    }
+    addlanguage("Python")
+    addlanguage("TypeScript")
+
+    function addOptiLanguage(langName){
+        const li = document.creteElement('li')
+        li.apppenchild(document.createTextNode('langName'));
+    }
+    addOptiLanguage("")
+</script>
 </html>
 
 <!-- 

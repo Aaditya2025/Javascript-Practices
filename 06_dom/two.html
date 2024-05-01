@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Part 2</title>
+</head>
+<body style="background-color: #212121; color: #fff">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+
+<script>
+
+    function addlanguage(langName){
+        const li = document.createElement('li'); 
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addlanguage("Python")
+    addlanguage("Typesript")
+
+    function addOptiLanguage(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(li);
+    }
+    addOptiLanguage("Java")
+    addOptiLanguage('golang')
+
+//Edit: 
+const newlang = document.querySelector("li:nth-child(2)")
+// newlang.innerHTML = "Mojo"
+
+const newli = document.createElement('li')
+newli.textContent = "Mojo";
+newlang.replaceWith(newli)   //Here we have a reference of that element which we want to change that's why we simply apply "replaceWith" Method to change the content. 
+
+const firstlang = document.querySelector("li:first-child")
+firstlang.outerHTML = '<li>TypeScript</li>'
+
+
+//REMOVE: 
+const lastlang = document.querySelector('li:last-child')
+lastlang.remove()
+    
+</script>
+
+</html>
