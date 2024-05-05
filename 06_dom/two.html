@@ -14,17 +14,18 @@
 <script>
 
     function addlanguage(langName){
-        const li = document.createElement('li'); 
-        li.innerHTML = `${langName}`
-        document.querySelector('.language').appendChild(li)
+        const li = document.createElement('li');   //1: Creating a element we want. 
+        li.innerHTML = `${langName}`               //2: Adding the text we want. 
+        document.querySelector('.language').appendChild(li)  //3: Then we simply append that element which we created so that element become the part of that parent node. 
     }
     addlanguage("Python")
     addlanguage("Typesript")
 
     function addOptiLanguage(langName){
         const li = document.createElement('li')
-        li.appendChild(document.createTextNode(langName));
-        document.querySelector('.language').appendChild(li);
+        li.appendChild(document.createTextNode(langName));   
+//We also use appendChild ratther than using innerHTML because new text is the child of li. 
+        document.querySelector('.language').appendChild(li);  //Then we simply append to parent.
     }
     addOptiLanguage("Java")
     addOptiLanguage('golang')
