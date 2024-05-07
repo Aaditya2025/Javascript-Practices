@@ -86,9 +86,8 @@ consumePromiseFive()
 
 // async function getAllUsers(){
 //     try {
-//         const response = await fetch('https://jsonplaceholder.typicode.com/users')
-
-//         const data = await response.json()    //Ye convert hone bhi time lagta hai toh usse bhi hame await karana hoga. node 09_advance_one/promises.js
+//     const response = await fetch('https://jsonplaceholder.typicode.com/users')
+//     const data = await response.json() //It takes times in conversion that's why we use await. 
 //         console.log(data);
 //     } catch (error) {
 //         console.log("E: ", error);
