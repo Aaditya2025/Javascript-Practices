@@ -28,9 +28,9 @@ const arr = [0, 1, 2, 3, 4, 5] ;
 console.log("A",  arr);
 const myn1 = arr.slice(1,3)
 
-console.log(myn1); 
+console.log(myn1);      // 'slice' will not include the last index value. 
 console.log("B", arr); 
 
 const myn2 = arr.splice(1,3)
 console.log("C", arr)
-console.log(myn2); 
+console.log(myn2);    //Include last index value. 
