@@ -19,7 +19,9 @@ const JSuser ={
 
 // console.log(JSuser.email);    
 // console.log(JSuser["email"]); // Another Method to access the object. 
+
 // console.log(JSuser["full name"])  //We are not able to access it with Dot(.) operator that't why second method is good to access any object keys or value.
+
 // console.log(JSuser[mysym])
 // JSuser.email = "yadav@gmail.com" 
 // Object.freeze(JSuser);    //After freeze the object will not change. 

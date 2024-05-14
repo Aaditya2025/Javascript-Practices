@@ -8,7 +8,6 @@ const dc_heros = ["superman", "flash", "batman"];
 // console.log(marvel_heros[3][1])
 
 
-
 // const allHeros = marvel_heros.concat(dc_heros);   //It is better than push but mostly developer use spread operator.
 // console.log(allHeros);
 
@@ -20,15 +19,14 @@ const all_new_heros = [...marvel_heros, ...dc_heros];
 
 
 // const anotherArray = [1, 2, 3, [4, 5, 6], [2, 8, [1, 9]],3]
-// const realanotherArray = anotherArray.flat(Infinity)   //"flat": It will break all the element into a single array.
+// const realanotherArray = anotherArray.flat(Infinity)   //"flat": It will break all the element into a single array element.
 // console.log(realanotherArray);
 
 
 
-// console.log(Array.isArray("Aditya"));
-// console.log(Array.from("Aditya"));   //To convert value into an array.
-// console.log(Array.from({name: "Aditya"}));  //We have to tell that of which part you want to create array.
-
+console.log(Array.isArray("Aditya"));
+console.log(Array.from("Aditya"));   //To convert value into an array.
+console.log(Array.from({name: "Aditya"}));  //We have to tell that of which part you want to create array.
 
 
 const score1 = 100; 
