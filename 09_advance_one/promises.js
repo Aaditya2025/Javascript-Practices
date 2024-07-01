@@ -7,13 +7,13 @@ const promiseOne = new Promise(function(resolve, reject){
     setTimeout(function(){
         console.log('Async task is compelete');
         resolve()     
-        //'resolve()' is directly connected to the '.then' and when we use this then resoleve func. is called.
+        //'resolve()' is directly connected to the '.then' and when we use this then resolve func. is called.
     }, 1000)
 })
 
 promiseOne.then(function(){
     console.log("Promise consumed");
-})
+})``
 
 // WAY 2: 
 new Promise(function(resolve, reject){
@@ -51,8 +51,8 @@ const promiseFour = new Promise(function(resolve, reject){
     }, 1000)
 })
 
- promiseFour
- .then((user) => {
+promiseFour
+.then((user) => {
     console.log(user);
     return user.username
 }).then((username) => {         
@@ -63,7 +63,7 @@ const promiseFour = new Promise(function(resolve, reject){
 }).finally(() => console.log("The promise is either resolved or rejected"))    //Ye Hamesha execute hoga. 
 
 
-// WAY 5: async await ka use kar sakte hai promises ko accept kar sakte hai. Isame erroe directly handle nhi hota hai. 
+// WAY 5: async await ka use kar sakte hai promises ko accept kar sakte hai. Isame error directly handle nhi hota hai. 
 const promiseFive = new Promise(function(resolve, reject){
     setTimeout(function(){
         let error = true
@@ -77,7 +77,7 @@ const promiseFive = new Promise(function(resolve, reject){
 
 async function consumePromiseFive(){
     try {                            //Error ko handle karane ke liye hame try and catch ka use karna chahiye. 
-        const response = await promiseFive
+        const response = await promiseFive    
         console.log(response);
     } catch (error) {
         console.log(error);
@@ -110,3 +110,6 @@ fetch('https://api.github.com/users/hiteshchoudhary')
 
 // promise.all
 // yes this is also available, kuch reading aap b kro.
+
+
+// NOTE: Using .then twice in a Promise chain allows you to handle the result of an asynchronous operation step by step. The first .then processes the result of the original Promise and returns a new value, which is then handled by the second .then. This chaining mechanism enables sequential processing of asynchronous operations in a clean and readable manner.

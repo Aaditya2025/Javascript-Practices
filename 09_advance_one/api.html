@@ -10,13 +10,17 @@
     
 </body>
 <script>
-    const requestURL = 'https://api.github.com/users/hiteshchoudhary'
+    const requestURL = 'https://api.github.com/users/Aaditya2025'
+
     const xhr = new XMLHttpRequest();   // "XMLHttpRequest()" this is a object and we store that object into the variable xhr."
-    xhr.open('GET', requestURL);  
+
+    xhr.open('GET', requestURL);  //The open method of XMLHttpRequest initializes a request. This method is used to specify the type of request, the URL, and whether the request should be asynchronous or not.
+
     xhr.onreadystatechange = function(){
         console.log(xhr.readyState); 
         if(xhr.readyState === 4){
             const data = JSON.parse(this.responseText); 
+            //To convert string into json we use "JSON.parse".
             console.log(typeof data)
             console.log(data.followers);
         }
@@ -24,6 +28,23 @@
     xhr.send(); 
 </script>
 </html>
+
+<!--
+The xhr.onreadystatechange property is an event handler thatis called whenever the readyState property of theXMLHttpRequest changes. This is used to monitor the progressof the request.
+
+⭕readyState Values:
+
+The readyState property has five possible values:
+0 (UNSENT): The request is not initialized.
+1 (OPENED): The request has been set up (i.e., open has been called).
+2 (HEADERS_RECEIVED): The request has been sent and the headers have been received.
+3 (LOADING): The response is being downloaded (i.e., responseText holds partial data).
+4 (DONE): The request is complete, and the response is fully received.
+-->
+
+
+
+
 
 <!-- 
 Is console.log is the part of JavaScript: So console.log will come from the code of C++ which is written in the v8 GitHub repository file path is v8/src/d8/d8-console.cc; so this path of file where the code of console.log is written in the C++ language. So that is the main place where it found so technically it is not the part of js. 
