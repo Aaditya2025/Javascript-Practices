@@ -11,7 +11,7 @@
 ## parts of OOP
 Object literal: It means we are initiating a object. 
 
-- Constructor function
+- Constructor function: It provides you a new instances to your properties. 
 - Prototypes
 - Classes
 - Instances (new, this)

@@ -16,7 +16,7 @@ let heroPower = {
     }
 }
 
-Object.prototype.hitesh = function(){
+Object.prototype.hitesh = function(){     //Here we injecting a new prototype named as hitesh to the window object which add this prototype to all object which are created in future or created currently. 
     console.log(`hitesh is present in all objects`);
 }
 
